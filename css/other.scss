@@ -1,0 +1,304 @@
+@import 'px2rem'; //第一步先把px2rem导入
+$designWidth: 750; //写scss之前，必须要先定义designWidth。
+$color1: #61e294; //橙色
+$color2: rgb(188, 188, 188); //灰色
+$color3: rgb(242, 242, 242); //描边
+$color5:rgb(82, 204, 130); //綠色
+$color6: #cccc; //rgb(124,122,122);       //背景描邊顏色
+$color7:rgb(114, 114, 114); //字體段落內容
+.login_wrap {
+    padding: px2rem(29) px2rem(36);
+}
+
+.login_wrap .item-username input {
+    width: 100%;
+    height: px2rem(81);
+    border: 1px solid $color5;
+    font-size: px2rem(26);
+    padding-left: px2rem(93);
+}
+
+.login_wrap .item-username {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: px2rem(24);
+    .username_img i {
+        top: px2rem(20);
+        left: px2rem(28);
+        position: absolute;
+        background: url(../img/login_1.png);
+        height: px2rem(42);
+        display: block;
+        width: px2rem(32);
+        display: block;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-clip: padding-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+.login_wrap .item-password {
+    position: relative;
+    padding-bottom: px2rem(24);
+    .password_img i {
+        top: px2rem(20);
+        left: px2rem(28);
+        position: absolute;
+        background: url(../img/login_2.png);
+        height: px2rem(42);
+        display: block;
+        width: px2rem(32);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-clip: padding-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .code {
+        background: url(../img/enroll_1.png);
+        top: px2rem(22);
+        left: px2rem(28);
+        position: absolute;
+        height: px2rem(36);
+        display: block;
+        width: px2rem(32);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-clip: padding-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .btn-off {
+        background: url(../img/login_3.png) no-repeat;
+        background-repeat: no-repeat;
+        //      display: block;
+        background-size: 100% auto;
+        background-clip: padding-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .tp-btn {
+        display: block;
+        position: absolute;
+        right: px2rem(28);
+        top: px2rem(20);
+        height: px2rem(39);
+        display: block;
+        width: px2rem(46);
+    }
+    .code_buttom {
+        font-size: px2rem(26);
+        color: $color5;
+        position: absolute;
+        right: px2rem(29);
+        top: px2rem(24);
+    }
+}
+
+.login_wrap .item-password input {
+    width: 100%;
+    height: px2rem(81);
+    border: 1px solid $color5;
+    font-size: px2rem(26);
+    padding-left: px2rem(93);
+}
+
+.login_wrap .item-captcha {
+    padding-top: px2rem(53);
+    padding-bottom: px2rem(21);
+    font-size: px2rem(22);
+    color: #848689;
+    i {
+        float: left;
+        width: px2rem(32);
+        height: px2rem(32);
+    }
+    .item-inner {
+        line-height: 0.7rem;
+    }
+}
+
+.login_wrap .item-btns {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    height: px2rem(81);
+    background: $color5;
+    line-height: px2rem(81);
+    a {
+        color: #000000;
+    }
+}
+
+.login_wrap .item-login-option {
+    padding-top: px2rem(22);
+    font-size: px2rem(22);
+    .item-login-option {
+        float: left;
+    }
+    .retrieve-password {
+        float: right;
+    }
+    a {
+        color: rgb(84, 84, 84);
+    }
+}
+
+//師資
+.teachers_wrap {
+    padding: 0 px2rem(24);
+    padding-top: px2rem(16);
+    .contact_map {
+        background: #FFFFFF;
+        height: px2rem(378);
+        padding: px2rem(20);
+        .map {
+            background: $color6;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            margin: auto;
+        }
+    }
+    .techers_li {
+        background: #FFFFFF;
+        padding: px2rem(18) px2rem(22);
+        box-shadow: 0 2px 3px $color6;
+        margin-bottom: px2rem(10);
+//      overflow: hidden;
+         .techers_info{
+             padding-top: px2rem(22);
+             font-size: px2rem(28);
+             color: rgb(20,20,20);
+             padding-left: px2rem(115 );
+             .msg{
+                 
+                 .num{
+                     padding-left: px2rem(45);
+                 }
+                 .div_img{
+                     width: px2rem(32);
+                     height: px2rem(34);
+                     float: left;
+                     img{
+                         width: 100%;
+                         height: 100%;
+                         margin-top: 0.1rem;
+                     }
+                 }
+             }
+         }
+
+
+        .contact_color {
+            color: #000000 !important;
+        }
+        .techers_avatar {
+            float: left;
+        }
+        .techers_avatar img {
+            width: px2rem(136);
+            height: px2rem(136);
+            border-radius: 50%;
+        }
+        .techers_lntro {
+            font-size: px2rem(26);
+            padding-left: px2rem(160);
+            .name {
+                color: rgb(20, 20, 20);
+                font-size: px2rem(32);
+                padding-bottom: px2rem(13);
+                padding-top: px2rem(6);
+            }
+            .content {
+                color: rgb(99, 99, 99);
+                height: px2rem(70);
+            }
+        }
+    }
+    .contact_bg1 {
+        background: url(../img/my_bg3.png);
+            background-size: cover;
+    }
+    .contact_bg2 {
+        background: url(../img/my_bg2.png);
+            background-size: cover;
+    }
+}
+
+//活動
+.activity_wrap {
+    .bg_back{
+        background: #FFFFFF;
+        box-shadow: 0 0px 3px $color6;
+        border-radius: 3px;
+    }
+    .contact_map{
+        height: auto;
+    }
+    .activity_list{
+        background: url(../img/text_bg.png) no-repeat 0 100%;
+        z-index: 99;
+    }
+    .activity_content {
+        .content {
+            font-size: px2rem(24);
+            color: $color7;
+            
+            p{
+               margin-bottom: px2rem(15); 
+               text-indent:2em;
+            }
+        }
+    }
+    
+    
+    .activity_video{
+        margin-top: px2rem(16);
+        
+        h2{
+            text-align: center;
+            font-size: px2rem(32);
+            color: #000000;
+            text-indent: 0;
+        }
+        .video{
+            width: 100%;
+            min-height: px2rem(345);
+            position: relative;
+            margin-top: px2rem(42);
+            video{
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+//關於我們
+.about_list{
+    background-color:transparent !important;
+    .about_list_img{
+        width: 100%;
+        height: px2rem(294);
+        background: $color7;
+        margin-bottom: 0.32rem;
+        img{
+            width: 100%;
+            height: 100%;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            text-indent:0;;
+        }
+    }
+}
