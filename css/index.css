@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 body {
   font-size: 0.8rem; }
 
@@ -15,7 +15,7 @@ p {
   width: 100%;
   background: #f9f9f9; }
 
-.linex2 {
+.linex2 { 
   height: 0.0426666667rem;
   width: 100%;
   background: #d2d2d2;
