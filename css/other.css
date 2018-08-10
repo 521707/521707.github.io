@@ -1,0 +1,232 @@
+.login_wrap {
+  padding: 0.6186666667rem 0.768rem; }
+
+.login_wrap .item-username input {
+  width: 100%;
+  height: 1.728rem;
+  border: 1px solid #52cc82;
+  font-size: 0.5546666667rem;
+  padding-left: 1.984rem; }
+
+.login_wrap .item-username {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.512rem; }
+  .login_wrap .item-username .username_img i {
+    top: 0.4266666667rem;
+    left: 0.5973333333rem;
+    position: absolute;
+    background: url(../img/login_1.png);
+    height: 0.896rem;
+    display: block;
+    width: 0.6826666667rem;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.login_wrap .item-password {
+  position: relative;
+  padding-bottom: 0.512rem; }
+  .login_wrap .item-password .password_img i {
+    top: 0.4266666667rem;
+    left: 0.5973333333rem;
+    position: absolute;
+    background: url(../img/login_2.png);
+    height: 0.896rem;
+    display: block;
+    width: 0.6826666667rem;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .login_wrap .item-password .code {
+    background: url(../img/enroll_1.png);
+    top: 0.4693333333rem;
+    left: 0.5973333333rem;
+    position: absolute;
+    height: 0.768rem;
+    display: block;
+    width: 0.6826666667rem;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .login_wrap .item-password .btn-off {
+    background: url(../img/login_3.png) no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .login_wrap .item-password .tp-btn {
+    display: block;
+    position: absolute;
+    right: 0.5973333333rem;
+    top: 0.4266666667rem;
+    height: 0.832rem;
+    display: block;
+    width: 0.9813333333rem; }
+  .login_wrap .item-password .code_buttom {
+    font-size: 0.5546666667rem;
+    color: #52cc82;
+    position: absolute;
+    right: 0.6186666667rem;
+    top: 0.512rem; }
+
+.login_wrap .item-password input {
+  width: 100%;
+  height: 1.728rem;
+  border: 1px solid #52cc82;
+  font-size: 0.5546666667rem;
+  padding-left: 1.984rem; }
+
+.login_wrap .item-captcha {
+  padding-top: 1.1306666667rem;
+  padding-bottom: 0.448rem;
+  font-size: 0.4693333333rem;
+  color: #848689; }
+  .login_wrap .item-captcha i {
+    float: left;
+    width: 0.6826666667rem;
+    height: 0.6826666667rem; }
+  .login_wrap .item-captcha .item-inner {
+    line-height: 0.7rem; }
+
+.login_wrap .item-btns {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  height: 1.728rem;
+  background: #52cc82;
+  line-height: 1.728rem; }
+  .login_wrap .item-btns a {
+    color: #000000; }
+
+.login_wrap .item-login-option {
+  padding-top: 0.4693333333rem;
+  font-size: 0.4693333333rem; }
+  .login_wrap .item-login-option .item-login-option {
+    float: left; }
+  .login_wrap .item-login-option .retrieve-password {
+    float: right; }
+  .login_wrap .item-login-option a {
+    color: #545454; }
+
+.teachers_wrap {
+  padding: 0 0.512rem;
+  padding-top: 0.3413333333rem; }
+  .teachers_wrap .contact_map {
+    background: #FFFFFF;
+    height: 8.064rem;
+    padding: 0.4266666667rem; }
+    .teachers_wrap .contact_map .map {
+      background: #cccc;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      margin: auto; }
+  .teachers_wrap .techers_li {
+    background: #FFFFFF;
+    padding: 0.384rem 0.4693333333rem;
+    box-shadow: 0 2px 3px #cccc;
+    margin-bottom: 0.2133333333rem; }
+    .teachers_wrap .techers_li .techers_info {
+      padding-top: 0.4693333333rem;
+      font-size: 0.5973333333rem;
+      color: #141414;
+      padding-left: 2.4533333333rem; }
+      .teachers_wrap .techers_li .techers_info .msg .num {
+        padding-left: 0.96rem; }
+      .teachers_wrap .techers_li .techers_info .msg .div_img {
+        width: 0.6826666667rem;
+        height: 0.7253333333rem;
+        float: left; }
+        .teachers_wrap .techers_li .techers_info .msg .div_img img {
+          width: 100%;
+          height: 100%;
+          margin-top: 0.1rem; }
+    .teachers_wrap .techers_li .contact_color {
+      color: #000000 !important; }
+    .teachers_wrap .techers_li .techers_avatar {
+      float: left; }
+    .teachers_wrap .techers_li .techers_avatar img {
+      width: 2.9013333333rem;
+      height: 2.9013333333rem;
+      border-radius: 50%; }
+    .teachers_wrap .techers_li .techers_lntro {
+      font-size: 0.5546666667rem;
+      padding-left: 3.4133333333rem; }
+      .teachers_wrap .techers_li .techers_lntro .name {
+        color: #141414;
+        font-size: 0.6826666667rem;
+        padding-bottom: 0.2773333333rem;
+        padding-top: 0.128rem; }
+      .teachers_wrap .techers_li .techers_lntro .content {
+        color: #636363;
+        height: 1.4933333333rem; }
+  .teachers_wrap .contact_bg1 {
+    background: url(../img/my_bg3.png);
+    background-size: cover; }
+  .teachers_wrap .contact_bg2 {
+    background: url(../img/my_bg2.png);
+    background-size: cover; }
+
+.activity_wrap .bg_back {
+  background: #FFFFFF;
+  box-shadow: 0 0px 3px #cccc;
+  border-radius: 3px; }
+.activity_wrap .contact_map {
+  height: auto; }
+.activity_wrap .activity_list {
+  background: url(../img/text_bg.png) no-repeat 0 100%;
+  z-index: 99; }
+.activity_wrap .activity_content .content {
+  font-size: 0.512rem;
+  color: #727272; }
+  .activity_wrap .activity_content .content p {
+    margin-bottom: 0.32rem;
+    text-indent: 2em; }
+.activity_wrap .activity_video {
+  margin-top: 0.3413333333rem; }
+  .activity_wrap .activity_video h2 {
+    text-align: center;
+    font-size: 0.6826666667rem;
+    color: #000000;
+    text-indent: 0; }
+  .activity_wrap .activity_video .video {
+    width: 100%;
+    min-height: 7.36rem;
+    position: relative;
+    margin-top: 0.896rem; }
+    .activity_wrap .activity_video .video video {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%; }
+
+.about_list {
+  background-color: transparent !important; }
+  .about_list .about_list_img {
+    width: 100%;
+    height: 6.272rem;
+    background: #727272;
+    margin-bottom: 0.32rem; }
+    .about_list .about_list_img img {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      padding: 0;
+      margin: 0;
+      text-indent: 0; }
+
+/*# sourceMappingURL=other.css.map */

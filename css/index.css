@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 body {
   font-size: 0.8rem; }
 
@@ -239,8 +239,7 @@ ul, li {
 
 .home_play {
   position: relative;
-   
- }
+  overflow: -webkit-paged-y; }
 
 .layui-carousel-ind {
   position: absolute !important;
