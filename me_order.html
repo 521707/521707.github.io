@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#2196f3">
+		<title>My App</title>
+		<link rel="stylesheet" href="f7/framework7.min.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/me.css" />
+		<script type="text/javascript" src="js/hotcss.js"></script>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+		<!--日曆-->
+		<script>
+			$(function() {
+
+				//必要的数据
+				//今天的年 月 日 ；本月的总天数；本月第一天是周几？？？
+				var iNow = 0;
+
+				function run(n) {
+
+					var oDate = new Date(); //定义时间
+					oDate.setMonth(oDate.getMonth() + n); //设置月份
+					var year = oDate.getFullYear(); //年
+					var month = oDate.getMonth(); //月
+					var today = oDate.getDate(); //日
+
+					//计算本月有多少天
+					var allDay = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][month];
+
+					//判断闰年
+					if(month == 1) {
+						if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+							allDay = 29;
+						}
+					}
+
+					//判断本月第一天是星期几
+					oDate.setDate(1); //时间调整到本月第一天
+					var week = oDate.getDay(); //读取本月第一天是星期几
+
+					//console.log(week);
+					$(".dateList").empty(); //每次清空
+					//插入空白
+
+					for(var i = 0; i < week; i++) {
+						$(".dateList").append("<li></li>");
+					}
+
+					//日期插入到dateList
+					for(var i = 1; i <= allDay; i++) {
+						$(".dateList").append("<li>" + i + "</li>")
+					}
+					//标记颜色=====================
+					$(".dateList li").each(function(i, elm) {
+						//console.log(index,elm);
+						var val = $(this).text();
+						//console.log(val);
+						if(n == 0) {
+							if(val < today) {
+								$(this).addClass('ccc')
+							} else if(val == today) {
+								$(this).addClass('red')
+							} else if(i % 7 == 0 || i % 7 == 6) {
+								$(this).addClass('sun')
+							}
+						} else if(n < 0) {
+							$(this).addClass('ccc')
+						} else if(i % 7 == 0 || i % 7 == 6) {
+							$(this).addClass('sun')
+						}
+					});
+
+					//定义标题日期
+					$("#calendar h4").text(year + "年" + (month + 1) + "月");
+				};
+				run(0);
+
+				$(".a1").click(function() {
+					iNow--;
+					run(iNow);
+				});
+
+				$(".a2").click(function() {
+					iNow++;
+					run(iNow);
+				})
+			});
+		</script>
+
+	</head>
+
+	<body>
+		<!-- App root element -->
+		<div id="app">
+			<!-- Statusbar overlay -->
+			<div class="statusbar"></div>
+
+			<!-- Your main view, should have "view-main" class -->
+			<div class="view view-main">
+				<!-- Initial Page, "data-name" contains page name -->
+				<div data-name="home" class="page">
+
+					<!--顶部导航栏-->
+					<div class="navbar">
+						<div class="navbar-inner">
+							<div class="left" onclick="history.go(-1)">
+								<a href="#" class="link icon-only color-black">
+									<i class="icon icon-back"></i>
+								</a>
+							</div>
+							<div class="title">訂單詳情</div>
+							<div class="right">
+								<a href="#" class="link icon-only">
+									<i class="icon another-icon"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--滚动页面内容-->
+					<!-- Scrollable page content -->
+					<div class="page-content page_buttom">
+						<div class="me_order_wrap">
+							<div class="title">
+								<span>海綿寶寶</span>
+								<span>已繳費</span>
+							</div>
+							<div class="linex"></div>
+							<div class="order_list">
+								<div class="list_img">
+									<img src="img/me_kt.png" />
+								</div>
+
+								<div class="info">
+									<div class="info_title">
+										<span>舞蹈藝術</span>
+										<span>剩余：X堂</span>
+									</div>
+									<div class="info_time">
+										<p>本期已繳費：X堂</p>
+										<p>繳費日期：XXX</p>
+										<span class="too popup-open" id="lay_date" data-popup=".popup-about">本期已上</span>
+									</div>
+								</div>
+
+							</div>
+							<div class="linex"></div>
+							<div class="order_num">
+								<p>繳費編號：157548645643213245dasd</p>
+								<p>創建日期：XXXX</p>
+							</div>
+						</div>
+
+						<div class="popup popup-about" id="order_pop">
+							<div class="block">
+								
+									<!--彈出的內容-->
+									<div class="order_titme">
+										<div id="calendar">
+											<div class="time_wrap">
+												<div class="title">
+													<h4>2013年10月</h4>
+													<a href="##" class="a1">
+														<i class="icon icon-back color-white title_left"></i>
+													</a>
+													<a href="##" class="a2">
+														<i class="icon icon-forward color-white title_right"></i>
+													</a>
+												</div>
+
+												<ul class="week">
+													<li>日</li>
+													<li>一</li>
+													<li>二</li>
+													<li>三</li>
+													<li>四</li>
+													<li>五</li>
+													<li>六</li>
+
+												</ul>
+												<ul class="dateList"></ul>
+											</div>
+										</div>
+									</div>
+
+							
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<!--框架7的库JS路径-->
+		<!-- Path to Framework7 Library JS-->
+		<script type="text/javascript" src="f7/framework7.min.js"></script>
+		<!-- Path to your app js-->
+		<script type="text/javascript" src="f7/my_app.js"></script>
+	</body>
+
+</html>

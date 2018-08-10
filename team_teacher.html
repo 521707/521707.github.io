@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#2196f3">
+		<title>My App</title>
+		<link rel="stylesheet" href="f7/framework7.min.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/team.css" />
+		<script type="text/javascript" src="js/hotcss.js"></script>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+	</head>
+
+	<body>
+		<!-- App root element -->
+		<div id="app">
+			<!-- Statusbar overlay -->
+			<div class="statusbar"></div>
+
+			<!-- Your main view, should have "view-main" class -->
+			<div class="view view-main">
+				<!-- Initial Page, "data-name" contains page name -->
+				<div data-name="home" class="page">
+
+					<!--顶部导航栏-->
+					<div class="navbar">
+						<div class="navbar-inner">
+							<div class="left" onclick="history.go(-1)">
+								<a href="#" class="link icon-only color-black">
+									<i class="icon icon-back"></i>
+								</a>
+							</div>
+							<div class="title">導師簡介</div>
+							<div class="right">
+								<a href="#" class="link icon-only">
+									<i class="icon another-icon"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--滚动页面内容-->
+					<!-- Scrollable page content -->
+					<div class="page-content page_buttom">
+						<div class="teacher_top">
+							<div class="teacher_top_img">
+								<div class="top_img">
+									<img src="img/top_1.png" />
+								</div>
+								<div class="name">張老師</div>
+								<div class="course">課程7</div>
+							</div>
+						</div>
+						<div class="teacher_name">尊師簡介</div>
+						<div class="teacher_content">古筝是民族音樂的瑰寶，目前古筝多爲二十壹根弦，它形制古 樸典雅，聲音優美動聽，而且好聽易學，既適合獨奏又適合合 奏，因而深受廣大民樂愛好者追捧。秦漢胡同以 “讓世界柔軟” 爲核心價值觀，宣揚中國傳統文化，創造了壹個供成人與孩子 學習的廣闊平台
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<!--框架7的库JS路径-->
+		<!-- Path to Framework7 Library JS-->
+		<script type="text/javascript" src="f7/framework7.min.js"></script>
+		<!-- Path to your app js-->
+		<script type="text/javascript" src="f7/my_app.js"></script>
+
+	</body>
+
+</html>

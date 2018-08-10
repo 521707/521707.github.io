@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#2196f3">
+		<title>My App</title>
+		<link rel="stylesheet" href="f7/framework7.min.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/team.css" />
+		<link rel="stylesheet" href="css/other.css" />
+		<script type="text/javascript" src="js/hotcss.js"></script>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+	</head>
+
+	<body>
+		<!-- App root element -->
+		<div id="app">
+			<!-- Statusbar overlay -->
+			<div class="statusbar"></div>
+
+			<!-- Your main view, should have "view-main" class -->
+			<div class="view view-main">
+				<!-- Initial Page, "data-name" contains page name -->
+				<div data-name="home" class="page">
+
+					<!--顶部导航栏-->
+					<div class="navbar">
+						<div class="navbar-inner">
+							<div class="left" onclick="history.go(-1)">
+								<a href="#" class="link icon-only color-black">
+									<i class="icon icon-back"></i>
+								</a>
+							</div>
+							<div class="title">課程名稱</div>
+							<div class="right">
+								<a href="#" class="link icon-only team_name_img">
+									<i class="icon another-icon"><img src="img/team_1.png"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					
+					<!--底部-->
+					<div class="toolbar tabbar-labels" style="    height: 1.7066666667rem;">
+						<div class="toolbar-inner name_buootm">
+							<a href="#tab-1" class="tab-link name_start" onclick="window.open('team_arrange.html','_self')">
+								<span class="tabbar-label">立即預約</span>
+							</a>
+							<a href="#tab-2" class="tab-link name_start_tel">
+								 
+								<span class="tabbar-label">查詢熱線<img src="img/tetm3.png" /></span>
+							</a>
+						</div>
+					</div>
+					<!--滚动页面内容-->
+					<!-- Scrollable page content -->
+					<div class="page-content page_buttom">
+						<div class="teacher_top">
+							<div class="name_img">
+								 <img src="img/team_2.png" />
+							</div>
+						</div>
+						<div class="name_title">
+							<div class="title">
+								<span class="title1">成人古箏</span>
+								<span class="title2"><!--<img src="img/xing.png"><img src="img/xing.png"><img src="img/xing.png"><img src="img/xing.png"><img src="img/xing.png">5.0--></span>
+							</div>
+							<div class="time">
+								<span class="time1"><img src="img/time1.png">2018-7-18</span>
+								<!--<span class="time2">￥666</span>-->
+							</div>
+						</div>
+						<div class="name_introduce">
+							<div class="name_title_introduce">
+								課程簡介
+							</div>
+							<div class="content">  
+								古筝是民族音樂的瑰寶，目前古筝多爲二十壹根弦，它形制古 樸典雅，聲音優美動聽，而且好聽易學，既適合獨奏又適合合 奏，因而深受廣大民樂愛好者追捧。秦漢胡同以 “讓世界柔軟” 爲核心價值觀，宣揚中國傳統文化，創造了壹個供成人與孩子 學習的廣闊平台
+						
+							</div>
+						</div>
+						<div class="teacher_title">
+							任課教師
+						</div>
+						<div class="teacher_list_name">
+							<div class="teachers_wrap">
+							<div class="teachers_list">
+								<ul>
+									<li class="techers_li" onclick="window.open('team_teacher.html','_self')">
+										<div class="techers_avatar">
+											<img src="img/avatar_1.png"/>
+										</div>
+										<div class="techers_lntro">
+											<div class="name">李老師</div>
+											<div class="content">
+												吉他在流行音乐、摇滚音乐、蓝调、民歌、 佛朗明哥中，常被视为主要乐器。
+											</div>
+										</div>
+
+									</li>
+									<li class="techers_li" class="techers_li" onclick="window.open('team_teacher.html','_self')">
+										<div class="techers_avatar">
+											<img src="img/avatar_1.png"/>
+										</div>
+										<div class="techers_lntro">
+											<div class="name">李老師</div>
+											<div class="content">
+												吉他在流行音乐、摇滚音乐、蓝调、民歌、 佛朗明哥中，常被视为主要乐器。
+											</div>
+										</div>
+
+									</li>
+									<li class="techers_li" class="techers_li" onclick="window.open('team_teacher.html','_self')">
+										<div class="techers_avatar">
+											<img src="img/avatar_1.png"/>
+										</div>
+										<div class="techers_lntro">
+											<div class="name">李老師</div>
+											<div class="content">
+												吉他在流行音乐、摇滚音乐、蓝调、民歌、 佛朗明哥中，常被视为主要乐器。
+											</div>
+										</div>
+
+									</li>
+									
+								
+								</ul>
+
+							</div>
+
+						</div>
+
+					
+						</div>
+						<div class="linec2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<!--框架7的库JS路径-->
+		<!-- Path to Framework7 Library JS-->
+		<script type="text/javascript" src="f7/framework7.min.js"></script>
+		<!-- Path to your app js-->
+		<script type="text/javascript" src="f7/my_app.js"></script>
+
+	</body>
+
+</html>

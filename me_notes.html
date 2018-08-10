@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#2196f3">
+		<title>My App</title>
+		<link rel="stylesheet" href="f7/framework7.min.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/me.css" />
+		<script type="text/javascript" src="js/hotcss.js"></script>
+	</head>
+
+	<body>
+		<!-- App root element -->
+		<div id="app">
+			<!-- Statusbar overlay -->
+			<div class="statusbar"></div>
+
+			<!-- Your main view, should have "view-main" class -->
+			<div class="view view-main">
+				<!-- Initial Page, "data-name" contains page name -->
+				<div data-name="home" class="page">
+
+					<!--顶部导航栏-->
+					<div class="navbar">
+						<div class="navbar-inner">
+							<div class="left" onclick="history.go(-1)">
+								<a href="#" class="link icon-only color-black">
+									<i class="icon icon-back"></i>
+								</a>
+							</div>
+							<div class="title">學生須知</div>
+							<div class="right">
+								<a href="#" class="link icon-only">
+									<i class="icon another-icon"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!--<!-- 底部导航栏 -->
+					<!--<div class="toolbar">
+						<div class="toolbar-inner">
+							Toolbar links
+							<a href="#" class="link">Link 1</a>
+							<a href="#" class="link">Link 2</a>
+							
+						</div>
+					</div>-->
+
+					<!--滚动页面内容-->
+					<!-- Scrollable page content -->
+					<div class="page-content page_buttom">
+						<div class="index_mian me_info_mian notes">
+							<p>1. 學院請假必須提前一天通知中心行政部</p>
+							<p>2. 个别班若无故旷课，中心将扣取该堂学费；集体班 缺课者，中心将不予以补课或退回学费；
+							</p>
+							<p>3. 课程限期：由报读日起计算半年内有效；</p>
+							<p>4. 学员必须严格按照指定时间上课；</p>
+							<p>5. 中心会以为在读学员免费提供相应课程之练琴服务</p>
+							<p>6. 如果上八号风球，中心全部课程暂停上课；若发出雷暴或 暴雨警告，中心所有集体班课程暂停，个别班学员可自行决 定上课与否，有需要请假者请尽快通知中心。
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!--框架7的库JS路径-->
+		<!-- Path to Framework7 Library JS-->
+		<script type="text/javascript" src="f7/framework7.min.js"></script>
+		<!-- Path to your app js-->
+		<script type="text/javascript" src="f7/my_app.js"></script>
+	</body>
+
+</html>
