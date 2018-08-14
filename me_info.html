@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#2196f3">
+		<title>My App</title>
+		<link rel="stylesheet" href="f7/framework7.min.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/hotcss.js"></script>
+
+	</head>
+
+	<body>
+		<!-- App root element -->
+		<div id="app">
+			<!-- Statusbar overlay -->
+			<div class="statusbar"></div>
+
+			<!-- Your main view, should have "view-main" class -->
+			<div class="view view-main">
+				<!-- Initial Page, "data-name" contains page name -->
+				<div data-name="home" class="page">
+
+					<!--顶部导航栏-->
+					<div class="navbar">
+						<div class="navbar-inner">
+							<div class="left" onclick="history.go(-1)">
+								<a href="#" class="link icon-only color-white">
+									<i class="icon icon-back"></i>
+								</a>
+							</div>
+							<div class="title">我的信息</div>
+							<div class="right">
+								<a href="#" class="link icon-only">
+									<img class="me_info_img" src="img/suo.png" />
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!--<!-- 底部导航栏 -->
+					<!--<div class="toolbar">
+						<div class="toolbar-inner">
+							Toolbar links
+							<a href="#" class="link">Link 1</a>
+							<a href="#" class="link">Link 2</a>
+							
+						</div>
+					</div>-->
+
+					<!--滚动页面内容-->
+					<!-- Scrollable page content -->
+					<div class="page-content page_buttom">
+						<div class="info_wrap">
+							<div class="box_content">
+								<div class="list">
+									<div class="tag">账号</div>
+									<div class="info">
+										<div class="name">185198415157</div>
+										<div class="next"><i class="icon icon-next color-gray"></i></div>
+									</div>
+								</div>
+							</div>
+							<div class="info_line">
+								<div class="linex2"></div>
+							</div>
+							<div class="box_content">
+								<div class="list">
+									<div class="tag">供应商名称</div>
+									<div class="info">
+										<div class="name">小黄人</div>
+										<div class="next"><i class="icon icon-next color-gray"></i></div>
+									</div>
+								</div>
+							</div>
+							<div class="info_line">
+								<div class="linex2"></div>
+							</div>
+							<div class="box_content">
+								<div class="list">
+									<div class="tag">联系人</div>
+									<div class="info">
+										<div class="name">李师傅</div>
+										<div class="next"><i class="icon icon-next color-gray"></i></div>
+									</div>
+								</div>
+							</div>
+							<div class="info_line">
+								<div class="linex2"></div>
+							</div>
+							<div class="box_content">
+								<div class="list">
+									<div class="tag">联系供应商地址</div>
+									<div class="info">
+										<div class="name">949454315</div>
+										<div class="next"><i class="icon icon-next color-gray"></i></div>
+									</div>
+								</div>
+							</div>
+							<div class="info_line">
+								<div class="linex2"></div>
+							</div>
+							<div class="box_content">
+								<div class="list">
+									<div class="tag">供应商地址</div>
+									<div class="info">
+										<div class="name">956365431</div>
+										<div class="next"><i class="icon icon-next color-gray"></i></div>
+									</div>
+								</div>
+							</div>
+							
+						
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!--框架7的库JS路径-->
+		<!-- Path to Framework7 Library JS-->
+		<script type="text/javascript" src="f7/framework7.min.js"></script>
+		<!-- Path to your app js-->
+		<script type="text/javascript" src="f7/my_app.js"></script>
+	</body>
+
+</html>
