@@ -2,6 +2,19 @@
 $designWidth: 750; //写scss之前，必须要先定义designWidth。
 $color1:rgb(0, 209, 189); //绿色
 $color2: rgb(188, 188, 188); //灰色
+
+
+
+@media screen and (max-device-width:641px) and (max-device-height:764px){
+     .tab-link-active:after {
+       right: 36%;
+        
+    }
+    
+}
+
+
+
 body {
     font-size: 0.8rem;
 }
@@ -186,7 +199,9 @@ li {
         width: px2rem(40);
         height: px2rem(3);
         background: $color1;
-        right: 36%;
+         text-align: center;
+     
+        
     }
 }
 
