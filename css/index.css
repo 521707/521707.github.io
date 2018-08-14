@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@media screen and (max-width: 508px) {
+  .index_nav .tab-link-active:after {
+    position: absolute;
+    bottom: -0.256rem;
+    content: '';
+    width: 0.8533333333rem;
+    height: 0.064rem;
+    background: #00d1bd; } }
 body {
   font-size: 0.8rem; }
 
@@ -143,7 +151,7 @@ li {
     width: 0.8533333333rem;
     height: 0.064rem;
     background: #00d1bd;
-    right: 36%; }
+    text-align: center; }
 
 .ios .tabbar a.tab-link-active,
 .ios .tabbar-labels a.tab-link-active {
