@@ -1,12 +1,7 @@
 @charset "UTF-8";
-@media screen and (max-width: 508px) {
-  .index_nav .tab-link-active:after {
-    position: absolute;
-    bottom: -0.256rem;
-    content: '';
-    width: 0.8533333333rem;
-    height: 0.064rem;
-    background: #00d1bd; } }
+@media screen and (max-device-width: 641px) and (max-device-height: 764px) {
+  .tab-link-active:after {
+    right: 36%; } }
 body {
   font-size: 0.8rem; }
 
