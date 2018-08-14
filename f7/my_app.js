@@ -1,5 +1,8 @@
+
+
+
 //初始化f7框架
-var app = new Framework7();
+
 
 var app = new Framework7({
   // App root element
