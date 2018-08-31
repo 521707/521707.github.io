@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 .me_text_wrap {
   padding: 0.3413333333rem 0.512rem;
   padding-bottom: 0; }
@@ -127,7 +127,7 @@
       padding-bottom: 0.7466666667rem; }
     .talk_wrap .wrap_li .name_id {
       margin-top: 0.8533333333rem;
-      overflow: -webkit-paged-x;
+      overflow: auto;
       padding-bottom: 0.256rem; }
       .talk_wrap .wrap_li .name_id .left {
         font-size: 0.64rem;
