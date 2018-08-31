@@ -1,0 +1,408 @@
+/*引入平方字体*/
+
+@font-face {
+	font-family: PingFang-SC-Medium;
+	src: url("font/PingFang Medium2.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	font-family: PingFang-SC-Medium, sans-serif;
+}
+
+.login_nav {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	/*position: relative;*/
+	background: url(img/nav.png);
+	background-size: 100%;
+	background-size: cover;
+	width: 100%;
+	height: 1.203703rem;
+	box-shadow: 0px 4px 10px #B0B0B0;
+}
+
+.login-title {
+	text-align: center;
+	line-height: 1.203703rem;
+	font-size: 0.425925rem;
+	color: #523218;
+}
+
+* {
+	font-family: ;
+}
+
+html,
+body {
+	background: url(./img/bj.png) center center no-repeat;
+	background-size: 100%;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.left_nav {
+	position: absolute;
+	width: 0.185185rem;
+	height: 0.388888rem;
+	left: 0.416666rem;
+	top: 0.416666rem;
+}
+
+.download {
+	position: relative;
+}
+
+.android,
+.ios {
+	position: relative;
+	margin: auto;
+	width: 5.018518rem;
+	height: 1.203703rem;
+	border-radius: 0.083333rem;
+}
+
+.android {
+	background: rgb(82, 50, 25);
+	margin-bottom: 0.5rem;
+}
+
+.ios {
+	background: rgb(134, 35, 38);
+}
+
+.android img {
+	top: 0.138888rem;
+	left: 0.277777rem;
+	position: absolute;
+	width: 0.833333rem;
+	float: left;
+}
+
+.ios img {
+	float: left;
+	top: 0.157407rem;
+	left: 0.277777rem;
+	position: absolute;
+	width: 0.833333rem;
+}
+
+.android_name,
+.ios_name {
+	top: 0.05rem;
+	position: absolute;
+	left: 1.342592rem;
+}
+
+.android_name>span:first-child,
+.ios_name>span:first-child {
+	font-size: 0.462962rem;
+	display: block;
+	color: #FFFFFF;
+}
+
+.android_name>span:last-child,
+.ios_name>span:last-child {
+	font-size: 0.314814rem;
+	display: block;
+	color: #FFFFFF;
+}
+
+.mian {
+	width: 100%;
+	bottom: 0.944444rem;
+	padding-top: 0.74074rem;
+}
+
+.logo>img {
+	width: 1.629629rem;
+	/*height: 1.666666rem;*/
+	padding-left: 1.148148rem;
+	padding-top: 0.537037rem;
+}
+
+.ios_list {
+	text-align: center;
+}
+
+.ios_list>img {
+	width: 9.259259rem;
+	/*height: 8.703703rem;*/
+	padding-top: 0.574074rem;
+}
+
+.line {
+	height: 1.213703rem;
+}
+
+
+/*注册页面*/
+
+.tel_title {
+	padding-top: 1.759259rem;
+	text-align: center;
+}
+
+.tel_title .tag {
+	font-size: 0.37037rem;
+	color: rgb(82, 50, 24);
+}
+.tag2{
+	text-align: left;
+	padding-left: 0.01rem;
+}
+.tel_input {
+	text-align: center;
+	padding-top: 0.722222rem;
+}
+
+.input_top {
+	padding-bottom: 0.5rem;
+}
+
+.input_top>input {
+	width: 6.342592rem;
+	height: 0.953703rem;
+	border: 1px solid rgb(82, 50, 24);
+	border-radius: 0.083333rem;
+	font-size: 0.351851rem;
+	color: rgb(153, 153, 153);
+	position: relative;
+	padding-left: 0.879629rem;
+}
+
+.input_buttom>input {
+	border-radius: 0.083333rem;
+	border: 1px solid rgb(82, 50, 24);
+	border-radius: 0.083333rem;
+	font-size: 0.351851rem;
+	color: rgb(153, 153, 153);
+}
+
+.number:before {
+	content: '';
+	background: url(img/number.png);
+	background-size: cover;
+	width: 0.37037rem;
+	height: 0.583333rem;
+	display: block;
+	display: -webkit-box;
+}
+
+.number {
+	position: absolute;
+	z-index: 1;
+	padding-top: 0.185185rem;
+	padding-left: 0.268518rem;
+}
+
+.entry {
+	/*width: 6.342592rem;*/
+	width: 3.612962rem;
+	height: 0.953703rem;
+	border: 1px solid rgb(82, 50, 24);
+	border-radius: 0.083333rem;
+	font-size: 0.351851rem;
+	color: rgb(153, 153, 153);
+	position: relative;
+	padding-left: 0.879629rem;
+}
+
+.entry2 {
+	text-align: center;
+	margin-left: 0.314814rem;
+	width: 2.314814rem;
+	height: 0.953703rem;
+	border: 1px solid rgb(82, 50, 24);
+	border-radius: 0.083333rem;
+	font-size: 0.351851rem;
+	color: rgb(153, 153, 153);
+}
+
+.input_buttom {
+	display: block;
+}
+
+.number2:before {
+	background: url(img/number2.png);
+	content: '';
+	background-size: cover;
+	display: block;
+	display: -webkit-box;
+}
+
+.tel_checkbox>input {
+	border: 1px solid rgb(82, 50, 24);
+	width: 0.31rem;
+	height: 0.31rem;
+	color: red;
+	background: red;
+}
+
+.box {
+	margin: auto;
+	text-align: center;
+	width: 7.322222rem;
+}
+
+.tel_checkbox {
+	padding-top: 0.555555rem;
+	text-align: left;
+	font-size: 0.296296rem;
+	color: rgb(82, 50, 24);
+}
+.next{
+	padding-top: 0.87037rem;
+}
+
+.next>button{
+	width: 7.24074rem;
+	height: 0.962962rem;
+	border: 0;
+	background: rgb(82,50,24);
+	color: #FFFFFF;
+	font-size: 0.333333rem;
+	border-radius: 0.083333rem;
+}
+.tel_checkbox_left{
+	position: relative;
+	float: left;
+	padding-right: 1.685185rem;
+}
+.tel_checkbox_left>input,.tel_checkbox_right>input{
+	
+	width: 0.425925rem;
+	height: 0.425925rem;
+}
+.tel_checkbox_left>span,.tel_checkbox_right>span{
+	position: absolute;
+	font-size: 0.351851rem;
+}
+.tel_checkbox_left>span{
+	position: absolute;
+	left: 0.555555rem;
+	top: -.01rem;
+}
+.tel_checkbox_right{
+	position: relative;
+	    float: left;
+}
+.tel_checkbox_right>span{
+	position: absolute;
+	left: 0.555555rem;
+	top: -.01rem;
+}
+
+/*弹窗*/
+.lines{
+	width: 100%;
+	border: 0.5px solid rgb(82, 50, 24);
+	margin-top: 0.4rem;
+}
+
+.eject{
+	font-size: 0.4rem;
+	background-color: #ffffff;
+	border-radius: 12px;
+}
+.eject_tetle{
+	padding: 0.5rem 0;
+	/*position: relative;*/
+	padding-bottom: 1rem;
+}
+.eject_close{
+	position: relative;
+	display: -webkit-box;
+}
+.eject_close:before{
+	content: '';
+    background: url(img/close.svg);
+    background-size: cover;
+    height: 0.5rem;
+    width: 0.5rem;
+    right: 0.4rem;
+    top: 0.35rem;
+    position: absolute;
+    display: block;
+}
+.eject_input>.wject_password{
+	    /* width: 6.342592rem; */
+    /*width: 3.612962rem;*/
+    height: 0.803703rem;
+    border: 1.3px solid rgb(82, 50, 24);
+ 	width: 50%;
+    font-size: 0.351851rem;
+    color: rgb(153, 153, 153);
+    position: relative;
+    padding-left: 0.1rem;
+}
+.eject_input > input{
+    border: 1.3px solid rgb(82, 50, 24);
+    font-size: 0.351851rem;
+    color: rgb(153, 153, 153);
+}
+.eject_input{
+	width: 100%;
+	font-size: 0;
+}
+.wject_text{
+    text-align: center;
+    /*margin-left: 0.314814rem;*/
+    /*width: 2.314814rem;*/
+   width: 35%;
+    height: 0.803703rem;
+    border: 1px solid rgb(82, 50, 24);
+ 
+    font-size: 0.351851rem;
+    color: rgb(153, 153, 153);
+}
+.eject_buttom{
+    width: 7.24074rem;
+    height: 0.962962rem;
+    border: 0;
+    /*background: rgb(82,50,24);*/
+    line-height: 0.962962rem;
+    color: dodgerblue;
+    /*font-size: 0.333333rem;*/
+    border-radius: 0.083333rem;
+    
+    }
+    
+
+
+/*弹出层*/
+
+.bgPop {
+    display: none;
+    position: absolute;
+    z-index: 129;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #000000;
+}
+
+.pop {
+    top: 35%;
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 130;
+    border-radius: 8px;
+}
+
+.pop_wrapper{
+    position: fixed;
+    width: 7.322222rem;
+}

@@ -11,7 +11,11 @@
         var viewportEl = document.querySelector('meta[name="viewport"]'),
             hotcssEl = document.querySelector('meta[name="hotcss"]'),
             dpr = window.devicePixelRatio || 1,
+<<<<<<< HEAD
             maxWidth = 0,  //默认是540,改为0兼容平板
+=======
+            maxWidth = 540,
+>>>>>>> 345c1fa65511e1220a6f6923a6da72de8831b26a
             designWidth = 0;
 
         dpr = dpr >= 3 ? 3 : ( dpr >=2 ? 2 : 1 );

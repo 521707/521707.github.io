@@ -1,5 +1,6 @@
 @import 'px2rem'; //第一步先把px2rem导入
 $designWidth: 750; //写scss之前，必须要先定义designWidth。
+<<<<<<< HEAD
 $color1: rgb(255, 155, 42); //橙色
 $color2: rgb(188, 188, 188); //灰色
 $color3: rgb(242, 242, 242); //描边
@@ -360,12 +361,36 @@ li.media-item.chevron-center .item-link .item-inner {
     color: $color2;
     font-size: px2rem(32);
     height: px2rem(32);
+=======
+$color1:rgb(0, 209, 189); //绿色
+$color2: rgb(188, 188, 188); //灰色
+
+
+
+@media screen and (max-device-width:641px) and (max-device-height:764px){
+     .tab-link-active:after {
+       right: 36%;
+        
+    }
+    
+}
+
+
+
+body {
+    font-size: 0.8rem;
+}
+
+p {
+    margin: 0;
+>>>>>>> 345c1fa65511e1220a6f6923a6da72de8831b26a
 }
 
 .ios .button.button-active,
 .ios .button.tab-link-active {
     line-height: px2rem(88);
     background: #FFFFFF;
+<<<<<<< HEAD
     color: $color5;
     border-left-width: 0 !important;
 }
@@ -391,6 +416,11 @@ li.media-item.chevron-center .item-link .item-inner {
     }
 }
 
+=======
+    border-left-width: 0 !important;
+}
+
+>>>>>>> 345c1fa65511e1220a6f6923a6da72de8831b26a
 .subnavbar .segmented {
     line-height: px2rem(88);
     height: 100%;
@@ -410,12 +440,15 @@ li.media-item.chevron-center .item-link .item-inner {
     font-size: px2rem(24);
 }
 
+<<<<<<< HEAD
 .ios .block {
     margin-top: px2rem(42);
     margin-bottom: px2rem(39);
     padding: 0 px2rem(35);
 }
 
+=======
+>>>>>>> 345c1fa65511e1220a6f6923a6da72de8831b26a
 .ios .navbar~.page-with-subnavbar:not(.no-navbar) .subnavbar,
 .ios .navbar~.subnavbar {
     top: px2rem(88);
@@ -423,7 +456,11 @@ li.media-item.chevron-center .item-link .item-inner {
 
 .ios .navbar {
     height: px2rem(92);
+<<<<<<< HEAD
     background: #FFFFFF;
+=======
+    background: rgb(0, 209, 189);
+>>>>>>> 345c1fa65511e1220a6f6923a6da72de8831b26a
 }
 
 .ios .subnavbar {
@@ -450,9 +487,13 @@ li.media-item.chevron-center .item-link .item-inner {
 }
 
 .ios .tabbar a.tab-link-active,
+<<<<<<< HEAD
 .ios .tabbar-labels a.tab-link-active {
     color: $color1;
 }
+=======
+.ios .tabbar-labels a.tab-link-active {}
+>>>>>>> 345c1fa65511e1220a6f6923a6da72de8831b26a
 
 .ios .navbar:after {
     content: none;
@@ -463,8 +504,13 @@ li.media-item.chevron-center .item-link .item-inner {
 }
 
 .list .item-inner {
+<<<<<<< HEAD
     padding-top: px2rem(20.5);
     padding-bottom: px2rem(20.5);
+=======
+    padding-top: px2rem(29);
+    padding-bottom: px2rem(25);
+>>>>>>> 345c1fa65511e1220a6f6923a6da72de8831b26a
 }
 
 .ios .list .item-media {
@@ -477,6 +523,7 @@ li.media-item.chevron-center .item-link .item-inner {
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 .list li:after {
     content: '';
     position: absolute;
@@ -493,6 +540,8 @@ li.media-item.chevron-center .item-link .item-inner {
     transform-origin: 50% 100%;
 }
 
+=======
+>>>>>>> 345c1fa65511e1220a6f6923a6da72de8831b26a
 .ios .list .item-content {
     padding-left: px2rem(22);
 }
@@ -519,6 +568,7 @@ li {
 }
 
 .ios .navbar .title {
+<<<<<<< HEAD
     display: flex;
     align-items: center;
     font-size: px2rem(40);
@@ -531,6 +581,10 @@ li {
         width: px2rem(188);
         height: px2rem(69);
     }
+=======
+    font-size: px2rem(36);
+    color: #FFFFFF;
+>>>>>>> 345c1fa65511e1220a6f6923a6da72de8831b26a
 }
 
 .ios .navbar~.page-with-subnavbar:not(.no-navbar) .page-content,
@@ -551,6 +605,7 @@ li {
     padding-top: px2rem(92);
 }
 
+<<<<<<< HEAD
 .me_chart_right {
     float: right;
     position: absolute;
@@ -627,6 +682,10 @@ li {
 
 .ios .page {
     background: #f9f9f9;
+=======
+.ios .page {
+    background: rgb(245,245,245);
+>>>>>>> 345c1fa65511e1220a6f6923a6da72de8831b26a
 }
 
 .ios .tabbar-labels {
@@ -637,6 +696,7 @@ li {
     box-shadow: 0px 0px 3px #c8c8c8;
 }
 
+<<<<<<< HEAD
 .home_ldd {
     width: px2rem(40);
     margin-top: 0rem;
@@ -729,11 +789,14 @@ li {
     background: #FFFFFF;
 }
 
+=======
+>>>>>>> 345c1fa65511e1220a6f6923a6da72de8831b26a
 .ios .row .col:nth-last-child(2),
 .ios .row .col:nth-last-child(2)~.col {
     width: 48.5%;
 }
 
+<<<<<<< HEAD
 .home_content {
     background: #FFFFFF;
     border-top: px2rem(8) solid rgb(246, 246, 246);
@@ -1610,3 +1673,346 @@ li {
         }
     }
 }
+=======
+.ios .toolbar-inner {
+    padding: px2rem(35) 0;
+    background: #FFFFFF;
+}
+
+.ios .tabbar,
+.ios .tabbar-labels {}
+
+//首页
+.index_nav {
+    height: px2rem(70) !important;
+    a {
+        font-size: px2rem(30);
+        width: 25% !important;
+        height: initial !important;
+    }
+    .tab-link-active {
+        position: relative;
+    }
+    .tab-link-active:after {
+        position: absolute;
+        bottom: px2rem(-12);
+        content: '';
+        width: px2rem(40);
+        height: px2rem(3);
+        background: $color1;
+         text-align: center;
+     
+        
+    }
+}
+
+.ios .tabbar a.tab-link-active,
+.ios .tabbar-labels a.tab-link-active {
+    color: rgb(50, 50, 50);
+}
+
+.ios .tabbar a,
+.ios .tabbar-labels a {
+    color: rgb(123, 123, 123);
+}
+
+.linex {
+    width: 100%;
+    height: px2rem(4);
+    background: rgb(245, 245, 245);
+}
+
+.linex2 {
+    width: 100%;
+    height: px2rem(2);
+    background: rgb(245, 245, 245);
+}
+
+.swiper-wrapper {
+    width: auto;
+}
+
+.index_tabs {
+    //  margin: px2rem(8) px2rem(25)  ;
+    .list {
+        margin: px2rem(8) 0;
+        padding-top: px2rem(13);
+        padding-bottom: px2rem(12);
+        padding-left: px2rem(8);
+        padding-right: px2rem(8);
+        font-size: px2rem(26);
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        .list_content {
+            padding: 0 px2rem(18);
+            overflow: hidden;
+            font-size: px2rem(26);
+            color: rgb(37, 37, 37);
+            img {
+                float: left;
+            }
+            .name_left {
+                float: left;
+                width: 56%;
+                padding: px2rem(14) 0;
+                img {
+                    margin-top: 0.09rem;
+                    height: px2rem(30);
+                }
+                .name {
+                    padding-left: px2rem(36+20);
+                }
+            }
+            .status_right {
+                padding: px2rem(14) 0;
+                float: right;
+                width: 44%;
+                img {
+                    margin-top: 0.135rem;
+                    height: px2rem(30);
+                }
+                .status {
+                    padding-left: px2rem(16+32);
+                }
+            }
+            .time_left {
+                padding: px2rem(14) 0;
+                float: left;
+                width: 56%;
+                padding: px2rem(14) 0;
+                img {
+                    width: px2rem(36);
+                    margin-top: 0.06rem;
+                }
+                .time {
+                    padding-left: px2rem(16+36);
+                }
+            }
+            .money_right {
+                float: right;
+                width: 44%;
+                padding: px2rem(14) 0;
+                img {
+                    margin-top: 0.11rem;
+                    width: px2rem(32);
+                }
+                .money {
+                    padding-left: px2rem(16+32);
+                }
+            }
+        }
+        .list_title {
+            color: rgb(37, 37, 37);
+            padding: 0 px2rem(22);
+            padding-bottom: px2rem(15);
+            overflow: hidden;
+            .title_left {
+                float: left;
+            }
+            .title_right {
+                float: right;
+                color: rgb(255, 42, 20);
+            }
+        }
+    }
+    .page-content {
+        padding: 0 !important;
+    }
+}
+
+.ios .index_tabs .block {
+    padding: 0 px2rem(25);
+    margin: 0;
+}
+
+//我的信息
+.me_info_img{
+    height: px2rem(37);
+    width: px2rem(31);
+}
+.info_wrap {
+    margin: px2rem(19) px2rem(24);
+    -webkit-box-shadow: 0px 3px 3px #c8c8c8;
+    -moz-box-shadow: 0px 3px 3px #c8c8c8;
+    box-shadow: 0px 3px 3px #c8c8c8;
+    .info_line {
+        padding: 0 px2rem(8);
+        background: #FFFFFF;
+    }
+    .box_content {
+        background: #FFFFFF;
+        padding: px2rem(25) 0;
+        padding-left: px2rem(33);
+        padding-right: px2rem(29);
+        .list {
+            font-size: px2rem(28);
+            overflow: hidden;
+            margin: 0;
+            .tag {
+                font-size: px2rem(28);
+                float: left;
+                color: rgb(40, 40, 40);
+                font-weight: bold;
+            }
+            .info {
+                line-height: 0.85rem;
+                font-size: px2rem(24);
+                color: rgb(125, 125, 125);
+                float: right;
+                display: -webkit-box;
+                .next i {
+                    width: px2rem(14);
+                    height: px2rem(22);
+                    margin-left: px2rem(23);
+                }
+            }
+        }
+    }
+}
+
+//未中标详情
+.not_mark_wrap{
+    margin-top: px2rem(8);
+    .box_wrap{
+        margin: 0 px2rem(24);
+        margin-top:px2rem(8) ;
+        .list_wrap{
+            padding-left: px2rem(70-24);
+        }
+    }
+    .list_wrap_input{
+        padding:  px2rem(11.5) 0;
+        padding-left: 0.9813333333rem;
+        display: -webkit-box;
+        font-size: px2rem(26);
+        background: #FFFFFF;
+        overflow: hidden;
+        color: rgb(37,37,37);
+        
+        .title{
+            width: px2rem(34+127-23);
+            color: rgb(102,102,102);
+            line-height: px2rem(57);
+        }
+        .content{
+            width: px2rem(437);
+            padding-left: 0;
+            input{
+                border: 1px solid $color2;
+                padding: 0 px2rem(23)  ;
+                width: 100%;
+                font-size: px2rem(26);
+                height: px2rem(54);
+            }
+        }
+        
+    }
+    
+    
+    .list_wrap{
+        padding: px2rem(22) 0;
+        padding-left: px2rem(70);
+        display: -webkit-box;
+        font-size: px2rem(26);
+        background: #FFFFFF;
+        overflow: hidden;
+        color: rgb(37,37,37);
+        .title{
+            width: px2rem(34+127);
+            color: rgb(102,102,102);
+        }
+        .content{
+             
+            padding-left: 0;
+            input{
+                border: 1px solid $color2;
+                padding: px2rem(14) px2rem(23)  ;
+            }
+        }
+        .title_color{
+             color: rgb(43,43,43);
+        }
+        .content_red{
+            color: rgb(255,42,20);
+        }
+    }
+}
+
+
+//待发货
+.go_goods{
+    padding: 0 px2rem(24);
+    margin-top: px2rem(323);
+    margin-bottom: px2rem(30);
+    overflow: hidden;
+    button{
+        text-align: center;    
+        height: px2rem(80);
+        border: 0;
+        background: $color1;
+        border-radius: 3px;
+        font-size: px2rem(28);
+        color: #FFFFFF;
+    }
+}
+.goods_pop{
+//  display: none;
+}
+
+
+//报价
+.goods_total{
+    padding: px2rem(23) px2rem(50);
+    background: #FFFFFF;
+    display: -webkit-box;
+    margin-top: px2rem(132);
+    .title{
+        font-size: px2rem(30);
+    }
+    .money{
+        padding-left: px2rem(80);
+        font-size: px2rem(34);
+        color: rgb(255,42,20);
+    }
+}
+
+.offer_goods,.address_buttom{
+    padding: 0 px2rem(24);
+    margin-top: px2rem(45);
+    margin-bottom: px2rem(32);
+    overflow: hidden;
+    button{
+        text-align: center;    
+        height: px2rem(80);
+        border: 0;
+        background: $color1;
+        border-radius: 3px;
+        font-size: px2rem(28);
+        color: #FFFFFF;
+    }
+}
+
+//填写收货信息
+.address_wrap{
+    font-size: 1rem;
+    .item-content {
+        margin: 0 ;
+        padding: 0 ;
+        .item-inner{
+             .item-label{
+                 font-size: px2rem(26);
+                 width: px2rem(72+90);
+             }
+             .item-input-wrap{
+                  font-size: px2rem(26);
+                 input{
+                      font-size: px2rem(26);
+                 }
+             }
+             textarea{
+                 font-size: px2rem(26);
+             }
+        }
+    }
+}
+>>>>>>> 345c1fa65511e1220a6f6923a6da72de8831b26a
